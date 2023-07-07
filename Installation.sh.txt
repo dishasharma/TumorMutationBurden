@@ -1,0 +1,23 @@
+perl annotate_variation.pl -webfrom annovar -downdb refGene ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb avsnp150 ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb dbnsfp35a ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb 1000g2015aug ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb gnomad211_exome ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb gnomad211_genome ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb exac03 ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb esp6500siv2_all ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb gme ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb clinvar_20190305 ../humandb/ -buildver hg38
+
+perl annotate_variation.pl -webfrom annovar -downdb intervar_20180118 ../humandb/ -buildver hg38
+
+bwa index -p hg38ref_index -a bwtsw hg38.fa
